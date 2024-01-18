@@ -18,6 +18,8 @@ const BookingForm = ({ cityOverride }) => {
 
     const fetchDoctors = async (city) => {
         try{
+            // Unable to find API that provides the required informations 
+            // Can replace the (YOUR_API_URL) with fake API 
             const response = await fetch(`YOUR_API_URL/doctors?city=${city}`);
             const data = await response.json();
             setFormData((prevData) => ({...prevData, doctors: data}));

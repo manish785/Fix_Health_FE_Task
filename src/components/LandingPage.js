@@ -27,6 +27,9 @@ const LandingPage = () => {
           <HeroImage />
           <Testimonials />
         </div>
+        {/* <div style={{ flex: 2}}>
+          <Testimonials />
+        </div> */}
       </div>
     );
 };
